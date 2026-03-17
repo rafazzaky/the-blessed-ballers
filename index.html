@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Blessed Ballers – Komunitas Mini Soccer Jakarta</title>
+  <meta name="title" content="The Blessed Ballers – Komunitas Mini Soccer Jakarta" />
+  <meta name="description" content="The Blessed Ballers adalah komunitas mini soccer (minsoc) di Jakarta. Gabung bersama kami, main bareng, dan rasakan serunya komunitas mini soccer terbaik di Jakarta!" />
+  <meta name="keywords" content="mini soccer jakarta, komunitas mini soccer jakarta, minsoc jakarta, komunitas minsoc jakarta, futsal komunitas jakarta, the blessed ballers, mini soccer, komunitas bola jakarta, join mini soccer jakarta" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Indonesian" />
+  <meta name="author" content="The Blessed Ballers" />
+  <link rel="canonical" href="https://theblessedballers.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://theblessedballers.github.io/" />
+  <meta property="og:title" content="The Blessed Ballers – Komunitas Mini Soccer Jakarta" />
+  <meta property="og:description" content="Komunitas mini soccer Jakarta yang solid, seru, dan penuh semangat. Gabung sekarang!" />
+  <meta property="og:image" content="https://theblessedballers.github.io/image/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Blessed Ballers – Komunitas Mini Soccer Jakarta" />
+  <meta name="twitter:description" content="Komunitas mini soccer Jakarta yang solid, seru, dan penuh semangat. Gabung sekarang!" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsOrganization",
+    "name": "The Blessed Ballers",
+    "description": "Komunitas mini soccer (minsoc) di Jakarta.",
+    "url": "https://theblessedballers.github.io/",
+    "logo": "https://theblessedballers.github.io/image/logo.png",
+    "sport": "Mini Soccer",
+    "areaServed": { "@type": "City", "name": "Jakarta", "addressCountry": "ID" },
+    "sameAs": ["https://www.instagram.com/theblessedballers_jkt"],
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+6287818219393", "contactType": "customer service", "availableLanguage": "Indonesian" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue:       #1B3FA0;
+      --blue-light: #2952CC;
+      --blue-pale:  #EBF0FF;
+      --red:        #CC2020;
+      --red-light:  #E63030;
+      --red-pale:   #FFEAEA;
+      --black:      #0D0D0D;
+      --white:      #FFFFFF;
+      --off-white:  #F7F8FC;
+      --border:     #E2E6F0;
+      --text:       #1A1A2E;
+      --muted:      #6B7280;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--white); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.93);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.7rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+    .nav-brand img { width: 34px; height: 34px; object-fit: contain; }
+    .nav-brand span { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.05em; color: var(--black); text-transform: uppercase; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: 0.82rem; font-weight: 600; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--blue); }
+    @media (max-width: 768px) { .nav-links { display: none; } nav { padding: 0.7rem 1.2rem; } }
+
+    /* HERO */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 7rem 1.5rem 5rem; overflow: hidden;
+      background: var(--white);
+    }
+    .hero::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px;
+      background: linear-gradient(90deg, var(--blue) 50%, var(--red) 50%);
+    }
+    .hero-bg {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(27,63,160,0.028) 59px, rgba(27,63,160,0.028) 60px),
+        repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(27,63,160,0.028) 59px, rgba(27,63,160,0.028) 60px);
+    }
+    .hero-ring {
+      position: absolute; border-radius: 50%; border: 1.5px solid rgba(27,63,160,0.07);
+      top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;
+    }
+    .hero-ring:nth-child(1) { width: 620px; height: 620px; }
+    .hero-ring:nth-child(2) { width: 400px; height: 400px; border-color: rgba(204,32,32,0.06); }
+
+    .logo-wrap {
+      position: relative; z-index: 1; margin-bottom: 2rem;
+      animation: floatLogo 3.5s ease-in-out infinite;
+    }
+    .logo-wrap img {
+      width: clamp(140px, 28vw, 210px); height: auto; object-fit: contain;
+      filter: drop-shadow(0 10px 36px rgba(27,63,160,0.2)) drop-shadow(0 3px 10px rgba(0,0,0,0.1));
+    }
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-12px); }
+    }
+
+    .hero-eyebrow {
+      position: relative; z-index: 1;
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 1rem;
+      animation: fadeDown 0.6s ease both;
+    }
+    .hero-eyebrow::before, .hero-eyebrow::after {
+      content: ''; width: 26px; height: 2px;
+      background: linear-gradient(90deg, var(--blue), var(--red)); border-radius: 2px;
+    }
+
+    .hero-title {
+      font-family: 'Roboto', sans-serif; font-weight: 900;
+      font-size: clamp(3.5rem, 12vw, 8rem); line-height: 0.92;
+      letter-spacing: -0.01em; text-transform: uppercase; color: var(--black);
+      position: relative; z-index: 1;
+      animation: fadeDown 0.7s ease 0.1s both;
+    }
+    .hero-title .t-blue { color: var(--blue); }
+    .hero-title .t-red  { color: var(--red); }
+
+    .hero-subtitle {
+      position: relative; z-index: 1; margin-top: 1.5rem;
+      font-size: clamp(0.94rem, 2vw, 1.12rem); color: var(--muted);
+      max-width: 500px; line-height: 1.75;
+      animation: fadeDown 0.8s ease 0.2s both;
+    }
+    .hero-subtitle strong { color: var(--text); }
+
+    @keyframes fadeDown { from { opacity:0; transform:translateY(-14px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeUp   { from { opacity:0; transform:translateY(18px); }  to { opacity:1; transform:translateY(0); } }
+
+    .cta-group {
+      display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;
+      margin-top: 2.5rem; position: relative; z-index: 1;
+      animation: fadeUp 0.8s ease 0.35s both;
+    }
+
+    .scroll-hint {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+      color: var(--muted); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
+      animation: fadeUp 1s ease 0.7s both;
+    }
+    .scroll-arrow { width: 1.5px; height: 28px; background: linear-gradient(to bottom, transparent, var(--blue)); animation: sp 2s ease-in-out infinite; }
+    @keyframes sp { 0%,100%{opacity:.3} 50%{opacity:1} }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      padding: 0.85rem 1.75rem; border-radius: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.9rem; font-weight: 700;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .btn svg { width: 17px; height: 17px; flex-shrink: 0; }
+    .btn-blue { background: var(--blue); color: #fff; box-shadow: 0 4px 20px rgba(27,63,160,0.32); }
+    .btn-blue:hover { background: var(--blue-light); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(27,63,160,0.42); }
+    .btn-red  { background: var(--red);  color: #fff; box-shadow: 0 4px 20px rgba(204,32,32,0.28); }
+    .btn-red:hover  { background: var(--red-light); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(204,32,32,0.38); }
+    .btn-outline { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+    .btn-outline:hover { background: var(--blue-pale); transform: translateY(-3px); }
+    .btn-sm { padding: 0.6rem 1.25rem; font-size: 0.83rem; }
+
+    /* LAYOUT */
+    section { padding: 5.5rem 1.5rem; }
+    .container { max-width: 1020px; margin: 0 auto; }
+    .section-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.6rem; }
+    .section-title { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1; text-transform: uppercase; color: var(--black); margin-bottom: 1rem; }
+
+    /* DIVIDERS */
+    .div-stripe { height: 5px; background: linear-gradient(90deg, var(--blue) 50%, var(--red) 50%); }
+    .div-line   { height: 1px; background: var(--border); }
+
+    /* ABOUT */
+    .about-section { background: var(--off-white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .about-text p { color: var(--muted); line-height: 1.8; margin-bottom: 1rem; font-size: 0.97rem; }
+    .about-text p strong { color: var(--text); }
+    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .stat-card {
+      background: var(--white); border: 1.5px solid var(--border); border-radius: 14px;
+      padding: 1.5rem 1.25rem; text-align: center;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .stat-card:hover { border-color: var(--blue); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(27,63,160,0.12); }
+    .stat-card .icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .stat-card .lbl  { font-size: 0.77rem; color: var(--muted); font-weight: 600; }
+
+    /* FEATURES */
+    .features-section { background: var(--white); }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+    .feature-card {
+      background: var(--off-white); border: 1.5px solid var(--border); border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .feature-card:nth-child(odd)  { border-top: 3px solid var(--blue); }
+    .feature-card:nth-child(even) { border-top: 3px solid var(--red); }
+    .feature-card:hover { border-color: var(--blue); transform: translateY(-6px); box-shadow: 0 20px 60px rgba(27,63,160,0.14); }
+    .feature-icon { font-size: 1.9rem; margin-bottom: 1rem; }
+    .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.45rem; color: var(--black); }
+    .feature-card p  { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
+
+    /* INSTAGRAM */
+    .ig-section { background: var(--off-white); }
+    .ig-banner {
+      background: var(--white); border: 1.5px solid var(--border); border-radius: 20px;
+      padding: 2.25rem 2.5rem; display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(27,63,160,0.07);
+      border-left: 5px solid var(--blue);
+    }
+    .ig-left { display: flex; align-items: center; gap: 1.5rem; }
+    .ig-avatar {
+      width: 70px; height: 70px; border-radius: 50%; flex-shrink: 0;
+      border: 3px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7) border-box;
+      display: flex; align-items: center; justify-content: center; overflow: hidden;
+    }
+    .ig-avatar img { width: 52px; height: 52px; object-fit: contain; margin-top: 4px; }
+    .ig-info h3 { font-weight: 700; font-size: 1.05rem; color: var(--black); }
+    .ig-info p  { color: var(--muted); font-size: 0.84rem; margin-top: 0.25rem; line-height: 1.5; }
+
+    /* JOIN */
+    .join-section {
+      background: var(--black); text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .join-section::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+      background: linear-gradient(90deg, var(--blue) 50%, var(--red) 50%);
+    }
+    .join-section::after {
+      content: ''; position: absolute;
+      width: 560px; height: 560px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.04);
+      top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;
+    }
+    .join-section .section-title { color: var(--white); max-width: 600px; margin: 0 auto 1rem; }
+    .join-section .section-label { color: rgba(255,255,255,0.45); }
+    .join-section .sub { color: rgba(255,255,255,0.5); max-width: 480px; margin: 0 auto 2.5rem; line-height: 1.75; font-size: 0.97rem; }
+    .join-logo { width: 90px; margin: 0 auto 1.5rem; display: block; position: relative; z-index: 1; filter: drop-shadow(0 0 28px rgba(27,63,160,0.5)); }
+
+    /* FOOTER */
+    footer {
+      background: #080808;
+      border-top: 5px solid; border-image: linear-gradient(90deg, var(--blue) 50%, var(--red) 50%) 1;
+      padding: 2.5rem 1.5rem; text-align: center;
+      color: rgba(255,255,255,0.3); font-size: 0.8rem;
+    }
+    .footer-brand { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 1.3rem; color: var(--white); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.5rem; }
+    footer a { color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--white); }
+    .dot { margin: 0 0.4rem; }
+
+    /* SCHEDULE */
+    .schedule-section { background: var(--white); }
+
+    .schedule-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 2.5rem; }
+
+    .schedule-card {
+      background: var(--off-white);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+    .schedule-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(27,63,160,0.13); border-color: var(--blue); }
+
+    .schedule-card.past { opacity: 0.55; filter: grayscale(0.4); }
+    .schedule-card.past:hover { transform: none; box-shadow: none; }
+
+    .card-header {
+      background: var(--blue);
+      padding: 1rem 1.25rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .card-header.red-header { background: var(--red); }
+
+    .card-date-block { color: #fff; }
+    .card-day   { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.75; }
+    .card-date  { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 1.9rem; line-height: 1; }
+    .card-month { font-size: 0.8rem; font-weight: 700; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    .card-format {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900; font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+    }
+
+    .card-body { padding: 1.25rem; }
+
+    .card-row {
+      display: flex; align-items: flex-start; gap: 0.65rem;
+      margin-bottom: 0.8rem; font-size: 0.88rem;
+    }
+    .card-row:last-child { margin-bottom: 0; }
+
+    .card-icon { font-size: 1rem; flex-shrink: 0; margin-top: 0.05rem; }
+
+    .card-label { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.15rem; }
+    .card-value { font-weight: 600; color: var(--text); line-height: 1.3; }
+    .card-value a { color: var(--blue); text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 0.3rem; }
+    .card-value a:hover { text-decoration: underline; }
+    .card-value a svg { width: 13px; height: 13px; }
+
+    .card-footer {
+      border-top: 1px solid var(--border);
+      padding: 0.9rem 1.25rem;
+      display: flex; gap: 1rem;
+    }
+
+    .price-chip {
+      flex: 1; text-align: center;
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 10px; padding: 0.5rem 0.4rem;
+    }
+    .price-chip .p-label { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .price-chip .p-value { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 1.15rem; color: var(--blue); line-height: 1.1; margin-top: 0.1rem; }
+    .price-chip .p-value.red { color: var(--red); }
+
+    .badge-past {
+      display: inline-block;
+      background: #e5e7eb; color: #9ca3af;
+      font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.25rem 0.6rem; border-radius: 999px;
+      margin-left: 0.5rem; vertical-align: middle;
+    }
+
+    .badge-upcoming {
+      display: inline-block;
+      background: #dcfce7; color: #16a34a;
+      font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.25rem 0.6rem; border-radius: 999px;
+      margin-left: 0.5rem; vertical-align: middle;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    @keyframes badgePulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
+
+    .schedule-empty {
+      text-align: center; padding: 3rem 1rem; color: var(--muted);
+      grid-column: 1 / -1;
+    }
+    .schedule-empty .empty-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+
+    @media (min-width: 768px) { .schedule-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    /* SCHEDULE */
+    .schedule-section { background: var(--white); }
+    .schedule-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+    .sched-card {
+      background: var(--off-white); border: 1.5px solid var(--border);
+      border-top: 4px solid var(--blue); border-radius: 14px; padding: 1.5rem;
+      transition: transform 0.2s, box-shadow 0.2s; position: relative;
+    }
+    .sched-card:hover { transform: translateY(-5px); box-shadow: 0 12px 36px rgba(27,63,160,0.13); }
+    .sched-card-date { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .date-box {
+      background: var(--blue); color: #fff; border-radius: 10px;
+      padding: 0.5rem 0.75rem; text-align: center; min-width: 52px; flex-shrink: 0;
+    }
+    .date-box .day-num { font-family: 'Roboto', sans-serif; font-weight: 900; font-size: 1.6rem; line-height: 1; }
+    .date-box .month-str { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85; }
+    .sched-dow { font-size: 0.78rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: 0.06em; }
+    .sched-jam { font-size: 1rem; font-weight: 700; color: var(--black); margin-top: 0.1rem; }
+    .sched-info-row { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem; line-height: 1.4; }
+    .sched-info-row svg { width: 14px; height: 14px; flex-shrink: 0; margin-top: 2px; color: var(--blue); }
+    .sched-info-row a { color: var(--blue); text-decoration: none; font-weight: 600; }
+    .sched-info-row a:hover { text-decoration: underline; }
+    .sched-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+    .tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 999px; }
+    .tag-format { background: var(--blue-pale); color: var(--blue); }
+    .tag-player { background: #e8f5e9; color: #1b6b2f; }
+    .tag-keeper { background: #fff3e0; color: #b45000; }
+    .tbc-heading {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); margin: 2.5rem 0 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .tbc-heading::before, .tbc-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .tbc-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .tbc-item {
+      background: var(--off-white); border: 1.5px dashed var(--border); border-radius: 10px;
+      padding: 0.9rem 1.25rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+    }
+    .tbc-badge { background: #fff8e1; color: #b45000; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 999px; border: 1px solid #fcd34d; flex-shrink: 0; }
+    .tbc-date { font-weight: 700; font-size: 0.88rem; color: var(--text); }
+    .tbc-format { font-size: 0.8rem; color: var(--muted); }
+    .no-schedule { text-align: center; padding: 3rem 1.5rem; color: var(--muted); font-size: 0.95rem; }
+    .no-schedule .emoji { font-size: 2.5rem; display: block; margin-bottom: 0.75rem; }
+
+    /* SPONSORS */
+    .sponsors-section {
+      background: var(--black);
+      padding: 4rem 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .sponsors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .sponsor-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s;
+      text-decoration: none;
+    }
+
+    .sponsor-card:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.28);
+      transform: translateY(-4px);
+    }
+
+    .sponsor-card img {
+      width: 100%;
+      max-width: 150px;
+      max-height: 70px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      transition: opacity 0.25s;
+    }
+
+    .sponsor-card:hover img {
+      opacity: 1;
+    }
+
+    .footer-sponsors {
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .footer-sponsors span { color: rgba(255,255,255,0.25); }
+
+    @media (max-width: 600px) {
+      .sponsors-grid { grid-template-columns: 1fr; max-width: 300px; }
+    }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .about-grid    { grid-template-columns: 1fr; gap: 2rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .stats-grid    { grid-template-columns: 1fr 1fr; }
+      .ig-banner     { flex-direction: column; text-align: center; border-left: none; border-top: 5px solid var(--blue); padding: 1.75rem; }
+      .ig-left       { flex-direction: column; text-align: center; }
+      .cta-group     { flex-direction: column; align-items: stretch; max-width: 300px; }
+      .btn           { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Navigasi utama">
+    <a href="#" class="nav-brand">
+      <img src="image/logo.png" alt="The Blessed Ballers Logo" />
+      <span>The Blessed Ballers</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keunggulan">Keunggulan</a></li>
+      <li><a href="#jadwal">Jadwal</a></li>
+      <li><a href="#sosial">Instagram</a></li>
+      <li><a href="#gabung">Gabung</a></li>
+    </ul>
+    <a href="https://wa.me/6287818219393?text=Halo%20admin%20The%20Blessed%20Ballers!" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Hubungi Admin</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-ring" aria-hidden="true"></div>
+    <div class="hero-ring" aria-hidden="true"></div>
+
+    <div class="logo-wrap">
+      <img src="image/logo.png" alt="The Blessed Ballers – Logo Komunitas Mini Soccer Jakarta" width="210" height="210" />
+    </div>
+
+    <p class="hero-eyebrow">Komunitas Mini Soccer Jakarta</p>
+
+    <h1 class="hero-title">
+      <span class="t-blue">The Blessed</span><br/>
+      <span class="t-red">Ballers</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Komunitas <strong>mini soccer Jakarta</strong> yang solid, seru, dan penuh semangat.
+      Main bareng, kenal teman baru, berkembang bersama.
+    </p>
+
+    <div class="cta-group">
+      <a href="http://chat.whatsapp.com/LbudgobvaH4GA6QttatX9s?mode=r_t" class="btn btn-blue" target="_blank" rel="noopener noreferrer" aria-label="Join grup WhatsApp The Blessed Ballers">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Join Komunitas
+      </a>
+      <a href="https://wa.me/6287818219393?text=Halo%20admin%20The%20Blessed%20Ballers!%20Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20komunitas%20mini%20soccer%20kalian." class="btn btn-red" target="_blank" rel="noopener noreferrer" aria-label="Hubungi admin The Blessed Ballers">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Hubungi Admin
+      </a>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <div class="div-stripe"></div>
+
+  <!-- ABOUT -->
+  <section id="tentang" class="about-section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="section-label">Tentang Kami</p>
+          <h2 id="about-heading" class="section-title">Bukan Sekadar<br/><span style="color:var(--blue)">Main Bola</span></h2>
+          <p><strong>The Blessed Ballers</strong> adalah komunitas <strong>mini soccer di Jakarta</strong> yang tumbuh dari kecintaan terhadap olahraga dan kebersamaan. Kami percaya bahwa sepak bola kecil memberi dampak besar bagi kesehatan, pertemanan, dan semangat hidup.</p>
+          <p>Mulai dari <strong>pemula hingga yang sudah berpengalaman</strong>, semua disambut hangat. Komunitas kami rutin menggelar sesi main dan pertandingan di berbagai lapangan mini soccer Jakarta.</p>
+          <p>Bergabunglah dengan komunitas <strong>minsoc Jakarta</strong> yang terus berkembang — buktikan sendiri serunya main bareng The Blessed Ballers!</p>
+          <div style="margin-top:1.75rem;">
+            <a href="http://chat.whatsapp.com/LbudgobvaH4GA6QttatX9s?mode=r_t" class="btn btn-blue btn-sm" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Gabung Sekarang
+            </a>
+          </div>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat-card"><div class="icon">&#9917;</div><div class="lbl">Mini Soccer Jakarta</div></div>
+          <div class="stat-card"><div class="icon">&#128170;</div><div class="lbl">Komunitas Aktif</div></div>
+          <div class="stat-card"><div class="icon">&#127942;</div><div class="lbl">Rutin Tanding</div></div>
+          <div class="stat-card"><div class="icon">&#129309;</div><div class="lbl">Solid &amp; Seru</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="div-line"></div>
+
+  <!-- FEATURES -->
+  <section id="keunggulan" class="features-section" aria-labelledby="features-heading">
+    <div class="container">
+      <div style="text-align:center" class="reveal">
+        <p class="section-label">Kenapa Gabung?</p>
+        <h2 id="features-heading" class="section-title">Yang Bisa Kamu Dapetin</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal"><div class="feature-icon">&#128197;</div><h3>Jadwal Rutin</h3><p>Sesi main mini soccer dijadwalkan secara rutin. Konsisten main, konsisten berkembang.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">&#127962;</div><h3>Lokasi Jakarta</h3><p>Kami main di lapangan mini soccer terbaik yang tersebar di wilayah Jakarta.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">&#128101;</div><h3>Komunitas Solid</h3><p>Teman main yang asik, supportif, dan siap nemenin kamu dari latihan santai sampai tanding serius.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">&#128200;</div><h3>Skill Berkembang</h3><p>Main bareng rutin bikin skill makin tajam. Dari pemula sampai veteran, semua bisa maju.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">&#9889;</div><h3>Terbuka untuk Semua</h3><p>Gak perlu pengalaman khusus. Selama mau main dan enjoy, langsung bisa gabung!</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">&#127885;</div><h3>Turnamen &amp; Kompetisi</h3><p>Komunitas aktif ikut dan mengadakan turnamen mini soccer Jakarta untuk uji nyali bersama.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="div-stripe"></div>
+
+  <!-- JADWAL BERMAIN -->
+  <section id="jadwal" class="schedule-section" aria-labelledby="jadwal-heading">
+    <div class="container">
+      <div style="text-align:center" class="reveal">
+        <p class="section-label">Upcoming Matches</p>
+        <h2 id="jadwal-heading" class="section-title">Jadwal Bermain</h2>
+        <p style="color:var(--muted); font-size:0.95rem; max-width:480px; margin:0.5rem auto 0; line-height:1.65;">
+          Catat tanggalnya, siapkan sepatumu, dan hadir tepat waktu!
+        </p>
+      </div>
+      <div class="schedule-grid reveal" id="schedule-container">
+        <!-- Filled by JS -->
+        <div class="schedule-empty"><div class="empty-icon">&#9203;</div><p>Memuat jadwal...</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="div-line"></div>
+  <section id="sosial" class="ig-section" aria-labelledby="ig-heading">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:1.5rem;">
+        <p class="section-label">Media Sosial</p>
+        <h2 class="section-title">Follow Kami di Instagram</h2>
+      </div>
+      <div class="ig-banner reveal">
+        <div class="ig-left">
+          <div class="ig-avatar"><img src="image/logo.png" alt="The Blessed Ballers Logo" /></div>
+          <div class="ig-info">
+            <h3 id="ig-heading">@theblessedballers_jkt</h3>
+            <p>Follow Instagram kami untuk update jadwal, match highlights,<br/>dan konten seru komunitas mini soccer Jakarta!</p>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/theblessedballers_jkt" class="btn btn-blue" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:17px;height:17px;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Follow Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN CTA -->
+  <section class="join-section" id="gabung" aria-labelledby="join-heading">
+    <div class="container">
+      <div class="reveal" style="position:relative; z-index:1;">
+        <img src="image/logo.png" alt="The Blessed Ballers" class="join-logo" width="90" />
+        <p class="section-label">Daftar Sekarang</p>
+        <h2 id="join-heading" class="section-title">
+          Siap Main Bareng<br/><span style="color:var(--red)">The Blessed Ballers?</span>
+        </h2>
+        <p class="sub">Komunitas mini soccer Jakarta yang nunggu kamu. Langsung join grup atau hubungi admin kami untuk info jadwal dan lokasi main.</p>
+        <div class="cta-group" style="justify-content:center; margin:0 auto;">
+          <a href="http://chat.whatsapp.com/LbudgobvaH4GA6QttatX9s?mode=r_t" class="btn btn-blue" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Join Grup Komunitas
+          </a>
+          <a href="https://wa.me/6287818219393?text=Halo%20admin%20The%20Blessed%20Ballers!%20Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20komunitas%20mini%20soccer%20kalian." class="btn btn-red" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Tanya Admin Dulu
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSORS -->
+  <section class="sponsors-section" aria-labelledby="sponsors-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center; margin-bottom:2rem;">
+        <p class="section-label" style="color:rgba(255,255,255,0.45);">Didukung Oleh</p>
+        <h2 id="sponsors-heading" class="section-title" style="color:var(--white);">Official Sponsor</h2>
+      </div>
+      <div class="sponsors-grid reveal">
+        <a href="https://www.instagram.com/sportgatherid" target="_blank" rel="noopener noreferrer" class="sponsor-card" aria-label="Sponsor SportGather">
+          <img src="image/sponsor/sportgather.png" alt="SportGather – Official Sponsor The Blessed Ballers" />
+        </a>
+        <a href="https://www.instagram.com/baratech_official" target="_blank" rel="noopener noreferrer" class="sponsor-card" aria-label="Sponsor Baratech">
+          <img src="image/sponsor/baratech.png" alt="Baratech – Official Sponsor The Blessed Ballers" />
+        </a>
+        <a href="https://www.instagram.com/wilfore.id" target="_blank" rel="noopener noreferrer" class="sponsor-card" aria-label="Sponsor Wilfore">
+          <img src="image/sponsor/wilfore.png" alt="Wilfore – Official Sponsor The Blessed Ballers" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-brand">The Blessed Ballers</div>
+      <p style="margin-bottom:0.75rem;">Komunitas Mini Soccer &middot; Jakarta, Indonesia</p>
+      <p>
+        <a href="https://www.instagram.com/theblessedballers_jkt" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <span class="dot">&middot;</span>
+        <a href="https://wa.me/6287818219393" target="_blank" rel="noopener noreferrer">WhatsApp Admin</a>
+        <span class="dot">&middot;</span>
+        <a href="http://chat.whatsapp.com/LbudgobvaH4GA6QttatX9s?mode=r_t" target="_blank" rel="noopener noreferrer">Grup Komunitas</a>
+      </p>
+      <!-- <div class="footer-sponsors">
+        <span>Official Sponsor:</span>
+        <a href="https://www.instagram.com/sportgatherid" target="_blank" rel="noopener noreferrer">SportGather</a>
+        <span class="dot">&middot;</span>
+        <a href="https://www.instagram.com/baratech_official" target="_blank" rel="noopener noreferrer">Baratech</a>
+        <span class="dot">&middot;</span>
+        <a href="https://www.instagram.com/wilfore.id" target="_blank" rel="noopener noreferrer">Wilfore</a>
+      </div> -->
+      <p style="margin-top:1.25rem; font-size:0.72rem; opacity:0.25;">&copy; 2025 The Blessed Ballers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // 1. Observer untuk animasi reveal
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // 2. Data JSON Jadwal Pertandingan
+    const jadwalJson = {
+      "jadwal_pertandingan": [
+        {
+          "tanggal": "2026-03-29",
+          "jam": "15.45-18.00",
+          "venue": "POP Mini Soccer",
+          "venue_maps": "https://maps.app.goo.gl/dX8ohAzQQiuuyM4MA?g_st=ic",
+          "format": "7v7",
+          "biaya": {
+            "htm_player": 100000,
+            "htm_keeper": 50000
+          }
+        },
+        {
+          "tanggal": "2026-04-05",
+          "jam": "15.45-18.00",
+          "venue": "Persija Pulomas (Half Soccer)",
+          "venue_maps": "https://maps.app.goo.gl/SSSwFhtKRDgrLcju7",
+          "format": "9v9",
+          "biaya": {
+            "htm_player": 100000,
+            "htm_keeper": 50000
+          }
+        },
+        {
+          "tanggal": "2026-04-12",
+          "jam": "15.45-18.00",
+          "venue": "Bestindo Sports Center",
+          "venue_maps": "https://maps.app.goo.gl/xb1s5zZKgp3BwJyo8",
+          "format": "7v7",
+          "biaya": {
+            "htm_player": 100000,
+            "htm_keeper": 50000
+          }
+        }
+      ]
+    };
+
+    // 3. Logika untuk merender data ke HTML
+    const scheduleContainer = document.getElementById('schedule-container');
+    const bulanArr = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des'];
+    const hariArr = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+
+    function renderJadwal() {
+      const jadwal = jadwalJson.jadwal_pertandingan;
+      
+      // Kosongkan container (menghapus status "Memuat jadwal...")
+      scheduleContainer.innerHTML = '';
+
+      if (jadwal.length === 0) {
+        scheduleContainer.innerHTML = '<div class="no-schedule"><span class="emoji">⚽</span><p>Belum ada jadwal baru. Pantau terus ya!</p></div>';
+        return;
+      }
+
+      // Looping data JSON
+      jadwal.forEach(match => {
+        // Mengolah tanggal
+        const dateObj = new Date(match.tanggal);
+        const namaHari = hariArr[dateObj.getDay()];
+        const tgl = dateObj.getDate();
+        const namaBulan = bulanArr[dateObj.getMonth()];
+
+        // Mengolah biaya (mengubah 100000 menjadi 100k)
+        const htmPlayer = (match.biaya.htm_player / 1000) + 'k';
+        const htmKeeper = (match.biaya.htm_keeper / 1000) + 'k';
+
+        // Membuat elemen Card HTML
+        const cardHTML = `
+          <div class="sched-card">
+            <div class="sched-card-date">
+              <div class="date-box">
+                <div class="day-num">${tgl}</div>
+                <div class="month-str">${namaBulan}</div>
+              </div>
+              <div>
+                <div class="sched-dow">${namaHari}</div>
+                <div class="sched-jam">${match.jam} WIB</div>
+              </div>
+            </div>
+            <div class="sched-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <a href="${match.venue_maps}" target="_blank" rel="noopener noreferrer">${match.venue}</a>
+            </div>
+            <div class="sched-tags">
+              <span class="tag tag-format">${match.format}</span>
+              <span class="tag tag-player">Player: ${htmPlayer}</span>
+              <span class="tag tag-keeper">Keeper: ${htmKeeper}</span>
+            </div>
+          </div>
+        `;
+
+        // Memasukkan card ke dalam container
+        scheduleContainer.innerHTML += cardHTML;
+      });
+    }
+
+    // Panggil fungsi saat halaman dimuat
+    renderJadwal();
+  </script>
+</body>
+</html>
