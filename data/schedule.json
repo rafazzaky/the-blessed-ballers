@@ -1,8 +1,8 @@
 {
   "jadwal_pertandingan": [
     {
-      "tanggal": "2026-02-01",
-      "jam": "15.45-18.00",
+      "tanggal": "2026-02-21",
+      "jam": "19.45-22.00",
       "venue": "POP Mini Soccer",
       "venue_maps": "https://maps.app.goo.gl/dX8ohAzQQiuuyM4MA?g_st=ic",
       "format": "7v7",
@@ -28,17 +28,6 @@
       "venue": "Persija Pulomas (Half Soccer)",
       "venue_maps": "https://maps.app.goo.gl/SSSwFhtKRDgrLcju7",
       "format": "9v9",
-      "biaya": {
-        "htm_player": 100000,
-        "htm_keeper": 50000
-      }
-    },
-    {
-      "tanggal": "2026-04-12",
-      "jam": "15.45-18.00",
-      "venue": "Bestindo Sports Center",
-      "venue_maps": "https://maps.app.goo.gl/xb1s5zZKgp3BwJyo8",
-      "format": "7v7",
       "biaya": {
         "htm_player": 100000,
         "htm_keeper": 50000
