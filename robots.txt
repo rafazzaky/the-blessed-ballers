@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rafazzaky.github.io/the-blessed-ballers/sitemap.xml
