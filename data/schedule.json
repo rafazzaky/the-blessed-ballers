@@ -1,17 +1,6 @@
 {
   "jadwal_pertandingan": [
     {
-      "tanggal": "2026-02-21",
-      "jam": "19.45-22.00",
-      "venue": "POP Mini Soccer",
-      "venue_maps": "https://maps.app.goo.gl/dX8ohAzQQiuuyM4MA?g_st=ic",
-      "format": "7v7",
-      "biaya": {
-        "htm_player": 100000,
-        "htm_keeper": 50000
-      }
-    },
-    {
      "tanggal": "2026-03-14",
      "jam": "19.45-22.00",
      "venue": "Bestindo Sports Center",
