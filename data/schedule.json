@@ -1,17 +1,6 @@
 {
   "jadwal_pertandingan": [
     {
-     "tanggal": "2026-03-14",
-     "jam": "19.45-22.00",
-     "venue": "Bestindo Sports Center",
-     "venue_maps": "https://maps.app.goo.gl/xb1s5zZKgp3BwJyo8",
-     "format": "7v7",
-     "biaya": {
-      "htm_player": 100000,
-      "htm_keeper": 50000
-     }
-    },
-    {
       "tanggal": "2026-03-29",
       "jam": "15.45-18.00",
       "venue": "POP Mini Soccer",
@@ -32,6 +21,28 @@
         "htm_player": 100000,
         "htm_keeper": 50000
       }
-    }
+    },
+    {
+      "tanggal": "2026-04-11",
+      "jam": "18.45-21.00",
+      "venue": "POP Mini Soccer",
+      "venue_maps": "https://maps.app.goo.gl/dX8ohAzQQiuuyM4MA?g_st=ic",
+      "format": "7v7",
+      "biaya": {
+        "htm_player": 100000,
+        "htm_keeper": 50000
+      }
+    },
+    {
+      "tanggal": "2026-04-18",
+      "jam": "17.45-20.00",
+      "venue": "Bestindo Sports Center",
+      "venue_maps": "https://maps.app.goo.gl/xb1s5zZKgp3BwJyo8",
+      "format": "7v7",
+      "biaya": {
+        "htm_player": 100000,
+        "htm_keeper": 50000
+      }
+    },
   ]
 }
