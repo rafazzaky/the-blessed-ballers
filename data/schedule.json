@@ -32,6 +32,17 @@
         "htm_player": 100000,
         "htm_keeper": 50000
       }
+    },
+    {
+      "tanggal": "2026-05-06",
+      "jam": "17.45-20.00",
+      "venue": "Persija Pulomas (Half Soccer)",
+      "venue_maps": "https://maps.app.goo.gl/SSSwFhtKRDgrLcju7",
+      "format": "9v9",
+      "biaya": {
+        "htm_player": 100000,
+        "htm_keeper": 50000
+      }
     }
   ]
 }
