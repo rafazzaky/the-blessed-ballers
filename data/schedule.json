@@ -43,6 +43,39 @@
         "htm_player": 100000,
         "htm_keeper": 50000
       }
+    },
+    {
+      "tanggal": "2026-05-17",
+      "jam": "17.45-20.00",
+      "venue": "Bestindo Sports Center",
+      "venue_maps": "https://maps.app.goo.gl/xb1s5zZKgp3BwJyo8",
+      "format": "7v7",
+      "biaya": {
+        "htm_player": 100000,
+        "htm_keeper": 50000
+      }
+    },
+    {
+      "tanggal": "2026-05-23",
+      "jam": "17.45-20.00",
+      "venue": "Bestindo Sports Center",
+      "venue_maps": "https://maps.app.goo.gl/xb1s5zZKgp3BwJyo8",
+      "format": "7v7",
+      "biaya": {
+        "htm_player": 100000,
+        "htm_keeper": 50000
+      }
+    },
+    {
+      "tanggal": "2026-05-30",
+      "jam": "17.45-20.00",
+      "venue": "Bestindo Sports Center",
+      "venue_maps": "https://maps.app.goo.gl/xb1s5zZKgp3BwJyo8",
+      "format": "7v7",
+      "biaya": {
+        "htm_player": 100000,
+        "htm_keeper": 50000
+      }
     }
   ]
 }
